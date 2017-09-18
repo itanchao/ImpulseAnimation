@@ -29,7 +29,7 @@ class ImpulseAnimationView: UIView {
         
         let shape = CAShapeLayer()
         shape.frame = bounds
-        shape.path = UIBezierPath(roundedRect: bounds, cornerRadius: bounds.width > bounds.height ? bounds.height : bounds.width).cgPath
+        shape.path = UIBezierPath(roundedRect: bounds, cornerRadius: min(bounds.width, bounds.height)).cgPath
         shape.strokeColor = UIColor(colorLiteralRed: 16.0/255.0, green: 129.0/255.0, blue: 1, alpha: 0.25).cgColor
         shape.fillColor = UIColor(colorLiteralRed: 16.0/255.0, green: 129.0/255.0, blue: 1, alpha: 0.15).cgColor
         shape.opacity = 0

@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let animationView = ImpulseAnimationView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 120, height: 120)))
+        let animationView = ImpulseAnimationView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 120, height: 200)))
         animationView.center = view.center
         view.addSubview(animationView)
     }
